@@ -1,0 +1,61 @@
+/* Abstracts */
+/* Components */
+/* Layout */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.side-bar {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  background-color: red;
+}
+
+.contenar {
+  height: 100vh;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.contenar .header {
+  width: 65%;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.contenar .header .div-content-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+.contenar .header .div-content-profile img {
+  width: 100px;
+  height: 100px;
+}
+.contenar .header .div-content-profile .contenar-divs-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contenar .header .div-content-profile .contenar-divs-info .colon1 {
+  display: flex;
+  gap: 5px;
+}
+.contenar .header .div-content-profile .contenar-divs-info .colon2 {
+  display: flex;
+  gap: 5px;
+}
+.contenar .header .div-content-profile .contenar-divs-info .colon3 {
+  display: flex;
+  gap: 5px;
+}/*# sourceMappingURL=main.css.map */
