@@ -26,7 +26,7 @@ header {
 a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 13px;
+  font-size: "Poppins", sans-serif;
 }
 
 .header {
@@ -40,10 +40,9 @@ a {
 .header .section-content-profile {
   display: flex;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   gap: 50px;
   margin-bottom: 10px;
-  background-color: blue;
 }
 .header .section-content-profile img {
   width: 100px;
@@ -62,6 +61,7 @@ a {
 }
 .header .section-content-profile .contenar-divs-info .colon1 span {
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 .header .section-content-profile .contenar-divs-info .colon1 a {
   padding: 5px 10px;
@@ -87,7 +87,6 @@ a {
 }
 .header .section-bar-stories {
   margin-left: 30px;
-  background-color: green;
   width: 90%;
 }
 .header .section-bar-stories .stori {
@@ -136,7 +135,7 @@ a {
 
 body {
   background: #000000;
-  font-family: "Poppins", sans-serif white;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -158,7 +157,7 @@ body {
   font-size: 16px;
   font-weight: 600px;
   margin-left: 30px;
-  font-family: "Poppins", sans-serif white;
+  font-family: "Poppins", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }

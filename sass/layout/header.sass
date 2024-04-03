@@ -8,7 +8,7 @@ header
 a
     text-decoration: none
     color: $primary-color
-    font-size: $font-size-header-a
+    font-size: $base-font-family
 
 .header
     display: flex
@@ -17,16 +17,18 @@ a
     flex-direction: column
     width: $width-header
 
+
     color: $primary-color
 
-    .section-content-profile    //    section profile start  
+    .section-content-profile    //    section profile start 
+        
         display: flex
         justify-content: center
-        width: 90%
+        width: 100%
         gap:50px
         
         margin-bottom:10px
-        background-color: blue    
+       
         
         img                    //     icone de rofile
             width: $width-image-profile
@@ -46,13 +48,14 @@ a
 
                 span
                     color: $primary-color
+                    font-family: $base-font-family
 
                 a
                     padding: 5px 10px
                     font-size: 13px
                     background-color: $background-button-color
                     border-radius: 9px
-                    font-family:'Poppins', sans-serif 
+                    font-family:$base-font-family 
                     color:$primary-color
                     text-decoration: none         
                     
@@ -72,7 +75,7 @@ a
         
     .section-bar-stories             //         section stories
         margin-left: $margin-left-section-bar-stories_header
-        background-color: green
+      
         width: 90%
         
 
