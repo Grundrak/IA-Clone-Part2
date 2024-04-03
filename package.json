@@ -1,4 +1,5 @@
 {
+
   "name": "project-ia-part-ii",
   "version": "1.0.0",
   "description": "",
@@ -7,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "sass sass/main.sass css/style.css",
     "watch": "sass --watch sass/main.sass:css/style.css"
+
   },
   "author": "",
   "license": "ISC",
@@ -14,3 +16,4 @@
     "sass": "^1.72.0"
   }
 }
+
