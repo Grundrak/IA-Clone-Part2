@@ -1,5 +1,84 @@
 @import "../abstracts/variables"
+
+@import "../abstracts/mixins"
+a
+    text-decoration: none 
+    color:$primary-color
+    font-size:$font-size-header-a  
+
+.header
+    width:$width-header 
+    padding-top: $pading-top_header
+    color: $primary-color 
+
+
+    .section-content-profile    //    section profile start  
+        @include flex-itms_center
+        gap:60px
+        margin-left:60px
+        margin-bottom:30px
+
+        img                    //     icone de rofile
+           width: $width-image-profile
+           height: $width-image-profile
+           border-radius:50px
+
+        .contenar-divs-info        //      section info de profile
+            display: flex
+            flex-direction: column
+            gap: 15px
+
+            .colon1
+                @include flex-itms_center
+                gap: 15px
+                    
+                span
+                    color:$primary-color
+                    
+                a
+                    padding: 5px 10px
+                    font-size:13px
+                    background-color: $background-button-color
+                    border-radius: 9px
+                    
+                    &:hover
+                        background-color:$hover-button-color 
+ 
+            .colon2
+                display: flex
+                gap: 30px   
+        
+    .section-bar-stories             //         section stories
+        margin-left: $margin-left-section-bar-stories_header
+
+        .stori     
+            width: fit-content                  
+            @include flex-itms_center
+            flex-direction: column
+
+            .cercle1                // icone stor
+                padding: 2px
+                border: 2px solid $color-border-icone1_heder
+                background-color: black
+                border-radius: $border-radius-icone-stori_header
+                margin-bottom: 6px
+
+                .cercle2
+                    width: $width-cercle_header
+                    height: $width-cercle_header
+                    background-color: $background-color-icone2_heder
+                    border-radius: $border-radius-icone-stori_header
+                    @include flex-itms_center        
+                    justify-content: center
+                   
+                    
+                    
+                    
+                     
+                      
+
 header 
 
     height: 20%
     width: 60%
+
