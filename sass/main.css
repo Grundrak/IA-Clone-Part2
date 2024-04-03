@@ -13,11 +13,12 @@
 /* Spacing*/
 * {
   font-family: "Poppins", sans-serif white;
+  box-sizing: border-box;
   color: white;
 }
 
 body {
-  background: #000000;
+  background: rgb(0, 0, 0);
 }
 
 .sidebar {
@@ -28,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 14vw;
+  width: 200px;
   height: 100%;
   background: black;
   border-right: 1px solid #262626;
@@ -38,7 +39,7 @@ body {
   font-size: 25px;
   font-weight: 600px;
   margin-left: 30px;
-  font-family: "Poppins", sans-serif white;
+  font-family: "Open Sans", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
@@ -54,12 +55,12 @@ body {
   align-items: center;
   gap: 15px;
   height: 48px;
-  padding-left: 2px;
-  border-radius: 8px;
-  margin-left: 10px;
+  padding: 0 12px;
+  border-radius: 14px;
+  line-height: 1;
 }
 .sidebar button:hover > span {
-  background-color: rgba(131, 131, 136, 0.26);
+  background-color: #1A1A1A;
 }
 .sidebar button i {
   position: relative;
@@ -68,6 +69,7 @@ body {
 .sidebar button img {
   width: 28px;
   height: 28px;
+  transition: 0.2s;
 }
 .sidebar button span {
   font-size: 16px;
@@ -85,7 +87,7 @@ body {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
 }
 
 #Profile {
@@ -93,6 +95,4 @@ body {
   margin-left: 15px;
   filter: brightness();
   border: solid 2px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

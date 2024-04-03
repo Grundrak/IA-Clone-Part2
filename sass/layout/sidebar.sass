@@ -1,0 +1,84 @@
+@import "../abstracts/variables"
+
+*
+  font-family: $base-font-family
+  color: white
+
+body
+  background: $background-color
+
+.sidebar
+  a
+    display: inline-block
+    font-size: $base-font-size
+    font-weight: 600px
+    margin-left: 30px
+    font-family: $base-font-family
+    margin-top: 15px
+    margin-bottom: 20px
+
+  overflow-y: auto
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 14vw
+  height: $sidebar-height
+  background: black
+  border-right: 1px solid #262626
+
+  button
+    height: 60px
+    background-color: transparent
+    border: 0
+    padding: 0
+    cursor: pointer
+
+    > span
+      display: flex
+      align-items: center
+      gap: 15px
+      height: 48px
+      padding-left: 2px
+      border-radius: 8px
+      margin-left:10px
+
+    &:hover > span
+      background-color: $hover-color-sidebar
+
+     
+
+    i
+      position: relative
+      font-size: 28px
+
+    img
+      width: 28px
+      height: 28px
+      
+
+    span
+      font-size: 16px
+
+    &:nth-last-child(-n+2)
+      margin-top: auto
+
+    &:last-child
+      margin-top: 1px
+
+    img
+      filter: brightness(0) invert(1)
+
+  > nav
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    width: 95%
+
+#Profile
+  border-radius: 50px
+  margin-left: 15px
+  filter: brightness()
+  border: solid 2px

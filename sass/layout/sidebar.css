@@ -1,11 +1,3 @@
-/* Abstracts */
-/* Colors*/
-/* Font */
-/* Widths*/
-/* Heights*/
-/* Spacing*/
-/* Components */
-/* Layout */
 /* Colors*/
 /* Font */
 /* Widths*/
@@ -93,6 +85,4 @@ body {
   margin-left: 15px;
   filter: brightness();
   border: solid 2px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=sidebar.css.map */
