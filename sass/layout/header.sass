@@ -1,19 +1,23 @@
 @import "../abstracts/variables"
-@import "../abstracts/mixins"   
+@import "../abstracts/mixins"
+header
 
-  
+    height: 25%
+    width: 60%
+    padding-bottom: 20px
+a
+    text-decoration: none
+    color: $primary-color
+    font-size: $font-size-header-a
 
 .header
-    width:$width-header 
-    height: 25%
-    color: $primary-color
-    padding-bottom: 20px 
     display: flex
-    flex-direction: column
+    justify-content: center
     align-items: center
-    
-    background-color: red
+    flex-direction: column
+    width: $width-header
 
+    color: $primary-color
 
     .section-content-profile    //    section profile start  
         display: flex
@@ -25,9 +29,9 @@
         background-color: blue    
         
         img                    //     icone de rofile
-           width: $width-image-profile
-           height: $width-image-profile
-           border-radius:50px
+            width: $width-image-profile
+            height: $width-image-profile
+            border-radius: 50px
 
         .contenar-divs-info        //      section info de profile
             display: flex
@@ -37,16 +41,15 @@
 
             .colon1
                 @include flex-itms_center
-                gap: 10px
-                background-color: green
-                    
+
+                gap: 15px
+
                 span
-                    color:$primary-color
-                    font-family:'Poppins', sans-serif    
-                    
+                    color: $primary-color
+
                 a
                     padding: 5px 10px
-                    font-size:13px
+                    font-size: 13px
                     background-color: $background-button-color
                     border-radius: 9px
                     font-family:'Poppins', sans-serif 
@@ -54,8 +57,8 @@
                     text-decoration: none         
                     
                     &:hover
-                        background-color:$hover-button-color 
- 
+                        background-color: $hover-button-color
+
             .colon2
                 display: flex
                 gap: 30px
@@ -75,8 +78,8 @@
 
         
 
-        .stori     
-            width: fit-content                  
+        .stori
+            width: fit-content
             @include flex-itms_center
             flex-direction: column
 
@@ -96,14 +99,5 @@
                     height: $width-cercle_header
                     background-color: $background-color-icone2_heder
                     border-radius: $border-radius-icone-stori_header
-                    @include flex-itms_center        
+                    @include flex-itms_center
                     justify-content: center
-                   
-                    
-                    
-                    
-                     
-                      
-
-
-

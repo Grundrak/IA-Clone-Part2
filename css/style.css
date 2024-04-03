@@ -17,15 +17,25 @@
 /*direction*/
 /*margin & padding*/
 /*decoration*/
-.header {
-  width: 60%;
+header {
   height: 25%;
-  color: #ffffff;
+  width: 60%;
   padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: red;
+  flex-direction: column;
+  width: 60%;
+  color: #ffffff;
 }
 .header .section-content-profile {
   display: flex;
@@ -48,12 +58,10 @@
 .header .section-content-profile .contenar-divs-info .colon1 {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background-color: green;
+  gap: 15px;
 }
 .header .section-content-profile .contenar-divs-info .colon1 span {
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
 }
 .header .section-content-profile .contenar-divs-info .colon1 a {
   padding: 5px 10px;
@@ -216,7 +224,11 @@ body {
 /*margin & padding*/
 /*decoration*/
 footer {
-  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 10%;
   width: 60%;
 }
 
@@ -286,19 +298,21 @@ main {
 
 section {
   height: 100%;
-  width: 70%;
-  height: 60%;
+  width: 60%;
+  height: 65%;
 }
 
 .high-container {
-  height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   position: relative;
   min-height: 20px;
 }
 .high-container ::before {
   content: "";
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.027);
   top: 0;
   width: 70%;
   height: 1px;
@@ -320,11 +334,11 @@ section {
 .butt-nm ::before {
   content: "";
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.478);
+  background-color: rgba(255, 255, 255, 0.197);
   top: 0;
   left: 320px;
   width: 10%;
-  height: 2px;
+  height: 1px;
 }
 .butt-nm svg {
   cursor: pointer;
@@ -349,11 +363,9 @@ section {
 }
 
 .photo {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
   gap: 4px;
-  flex-wrap: wrap;
-  flex-direction: columns;
-  padding: 0 140px;
 }
 
 /*# sourceMappingURL=style.css.map */
