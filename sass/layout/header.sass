@@ -8,7 +8,7 @@ header
 a
     text-decoration: none
     color: $primary-color
-    font-size: $font-size-header-a
+    font-size: $base-font-family
 
 .header
     display: flex
@@ -17,14 +17,19 @@ a
     flex-direction: column
     width: $width-header
 
+
     color: $primary-color
 
-    .section-content-profile    //    section profile start
-        @include flex-itms_center
-        gap: 60px
-        margin-left: 60px
-        margin-bottom: 30px
-
+    .section-content-profile    //    section profile start 
+        
+        display: flex
+        justify-content: center
+        width: 100%
+        gap:50px
+        
+        margin-bottom:10px
+       
+        
         img                    //     icone de rofile
             width: $width-image-profile
             height: $width-image-profile
@@ -34,20 +39,26 @@ a
             display: flex
             flex-direction: column
             gap: 15px
+            
 
             .colon1
                 @include flex-itms_center
+
                 gap: 15px
 
                 span
                     color: $primary-color
+                    font-family: $base-font-family
 
                 a
                     padding: 5px 10px
                     font-size: 13px
                     background-color: $background-button-color
                     border-radius: 9px
-
+                    font-family:$base-font-family 
+                    color:$primary-color
+                    text-decoration: none         
+                    
                     &:hover
                         background-color: $hover-button-color
 
@@ -55,14 +66,29 @@ a
                 display: flex
                 gap: 30px
 
+                a
+                   font-size:13px
+                   font-family:'Poppins', sans-serif
+                   text-decoration: none
+                   color:$primary-color
+
+        
     .section-bar-stories             //         section stories
         margin-left: $margin-left-section-bar-stories_header
+      
+        width: 90%
+        
+
+        
 
         .stori
             width: fit-content
             @include flex-itms_center
             flex-direction: column
 
+            a
+                  font-family:'Poppins', sans-serif 
+                  color: $primary-color 
             .cercle1                // icone stor
                 padding: 2px
                 border: 2px solid $color-border-icone1_heder
@@ -70,6 +96,7 @@ a
                 border-radius: $border-radius-icone-stori_header
                 margin-bottom: 6px
 
+                   
                 .cercle2
                     width: $width-cercle_header
                     height: $width-cercle_header

@@ -26,7 +26,7 @@ header {
 a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 13px;
+  font-size: "Poppins", sans-serif;
 }
 
 .header {
@@ -39,10 +39,10 @@ a {
 }
 .header .section-content-profile {
   display: flex;
-  align-items: center;
-  gap: 60px;
-  margin-left: 60px;
-  margin-bottom: 30px;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  margin-bottom: 10px;
 }
 .header .section-content-profile img {
   width: 100px;
@@ -61,12 +61,16 @@ a {
 }
 .header .section-content-profile .contenar-divs-info .colon1 span {
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 .header .section-content-profile .contenar-divs-info .colon1 a {
   padding: 5px 10px;
   font-size: 13px;
   background-color: rgba(131, 131, 136, 0.26);
   border-radius: 9px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
 }
 .header .section-content-profile .contenar-divs-info .colon1 a:hover {
   background-color: rgba(238, 238, 238, 0.0980392157);
@@ -75,14 +79,25 @@ a {
   display: flex;
   gap: 30px;
 }
+.header .section-content-profile .contenar-divs-info .colon2 a {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
 .header .section-bar-stories {
   margin-left: 30px;
+  width: 90%;
 }
 .header .section-bar-stories .stori {
   width: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.header .section-bar-stories .stori a {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
 }
 .header .section-bar-stories .stori .cercle1 {
   padding: 2px;
@@ -120,7 +135,7 @@ a {
 
 body {
   background: #000000;
-  font-family: "Poppins", sans-serif white;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -142,7 +157,7 @@ body {
   font-size: 16px;
   font-weight: 600px;
   margin-left: 30px;
-  font-family: "Poppins", sans-serif white;
+  font-family: "Poppins", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
 }
