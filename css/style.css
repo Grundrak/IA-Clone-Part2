@@ -154,12 +154,13 @@ body {
 }
 .sidebar a {
   display: inline-block;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 600px;
   margin-left: 30px;
   font-family: "Poppins", sans-serif;
   margin-top: 15px;
   margin-bottom: 20px;
+  color: white;
 }
 .sidebar button {
   height: 60px;
@@ -167,6 +168,7 @@ body {
   border: 0;
   padding: 0;
   cursor: pointer;
+  color: white;
 }
 .sidebar button > span {
   display: flex;
