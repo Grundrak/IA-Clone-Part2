@@ -7,6 +7,39 @@
   left: 0
   position: fixed
   padding: 10px
+  overflow-y: auto 
+  max-height: 100vh
+.navbar-top
+    width: 100%
+    position: fixed 
+    top:0px
+    left:0px
+    right: 0px
+    background-color: $background-color
+    display: none
+    div
+      width: 90%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-left: auto
+      margin-right: auto
+      margin-top: 5px
+      div
+        display: flex
+        width: fit-content
+        justify-content: center
+        align-items: center
+        span
+          padding-right: 10px
+        div
+          width: fit-content
+          transform: rotate(180deg)
+
+    .b
+      background-color: rgb(65, 65, 65)
+      height: 1px
+      width: 100% 
 
 
 
@@ -14,6 +47,9 @@ body
   background: $background-color
   font-family: $base-font-family
   color: white
+
+.min_logo
+ height: 0px
 
 .sidebar
   a
@@ -55,22 +91,14 @@ body
       height: 48px
       padding-left: 2px
       border-radius: 8px
-      margin-left:10px
-
     &:hover > span
       background-color: $hover-color-sidebar
-
-     
-
     i
       position: relative
       font-size: 28px
-
     img
-      width: 28px
-      height: 28px
-      
-
+      width: 25px
+      height: 25px
     span
       font-size: 16px
 
@@ -91,8 +119,63 @@ body
 
 #Profile
   border-radius: 50px
-  margin-left: 15px
   filter: brightness()
   border: solid 2px
+
+@media (max-width: $breakpoint-tablet)
+  .sidebar a
+    display: none
+  .sidebar
+    width: 50px
+    position: fixed
+    nav
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 10px
+
+      button
+        background-color: transparent
+        border: none
+        cursor: pointer
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        span .Title
+          display: none
+  .min-logo svg
+    height: 26px
+    width: 26px
+    padding: 20px 10px
+
+
+
+
+@media (max-width: $breakpoint-mobile)
+  .sidebar
+    width: 100%
+    height: 50px
+    bottom: 0
+    left: 0
+    top: auto
+    nav
+      flex-direction: row
+      justify-content: space-between
+      button
+        display: none
+      .phone-responsive
+        display: flex
+        padding: 10px
+        justify-content: center
+        align-items: center
+    .navbar-top
+       display: flex !important
+       flex-direction: column
+    a,.Title,.min-logo
+      display: none
+    span img
+      width: 24px
+      height: 24px
 
 

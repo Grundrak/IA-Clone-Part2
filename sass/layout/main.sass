@@ -1,4 +1,5 @@
 @import "../abstracts/variables"
+@import "../abstracts/mixins"
 body
     box-sizing: border-box
     height: $max-height
@@ -28,14 +29,7 @@ section
     position: relative
     min-height: 20px
     ::before
-        content: ""
-        position: absolute
-        background-color: rgba(255, 255, 255, 0.027)
-        top: 0
-        width: 70%
-        height: 1px
-        left: 50%
-        transform: translateX(-50%)
+        @include before-decorator(rgba(255, 255, 255, 0.027), 70%, 1px, 0, 50%, translateX(-50%))
 
 .ic2 , .ic3
     color: #ffffff16
@@ -46,13 +40,7 @@ section
     gap: $high-spacing
     padding: $base-padding
     ::before
-        content: ""
-        position: absolute
-        background-color: rgba(255, 255, 255, 0.197)
-        top: 0
-        left: 320px
-        width: 10%
-        height: 1px
+        @include before-decorator(rgba(255, 255, 255, 0.197), 10%, 1px, 0, 320px)
     svg
         cursor: pointer
         color: $primary-color
@@ -75,3 +63,61 @@ section
     grid-template-columns: repeat(3, 200px)
     gap: $xsmall-spacing
 
+@media (max-width:$breakpoint-tablet)
+    body
+        height: 100vh
+        padding: 0
+        margin: 0
+    main
+        width: 80% 
+        height:100%
+        padding: 0
+       
+
+        section
+            width: $full-height
+            height: 60%
+            .butt-nm
+                ::before
+                    left: 196px
+
+@media (max-width: $breakpoint-mobile)
+  body
+    width: 100%
+    height: 100%
+    padding: 0
+    margin: 0
+  main
+    margin-left: 0
+    width: 100%
+    height: 100%
+    padding: 0
+    margin: 0
+  header
+    height: 30%
+    padding-top: 50px
+  section
+    height: calc(70% - 1px)
+    width: 100%
+    padding-bottom:100px
+  .butt-nm 
+    border-top: 0.8px solid rgb(65, 65, 65) 
+    width:100%
+    gap: 120px
+    padding: 10px 0  
+  svg
+    width: 26px
+    height: 26px
+  button
+    display: none
+  .photo
+    display: grid
+    grid-template-columns: repeat(3, 33.33%)
+    gap: 2px
+    
+    .posts img
+      width: 100%
+      height: 200px
+      object-fit: cover
+
+     

@@ -25,11 +25,8 @@ a
         display: flex
         justify-content: center
         width: 100%
-        gap:50px
-        
+        gap:50px 
         margin-bottom:10px
-       
-        
         img                    //     icone de rofile
             width: $width-image-profile
             height: $width-image-profile
@@ -77,10 +74,6 @@ a
         margin-left: $margin-left-section-bar-stories_header
       
         width: 90%
-        
-
-        
-
         .stori
             width: fit-content
             @include flex-itms_center
@@ -104,3 +97,89 @@ a
                     border-radius: $border-radius-icone-stori_header
                     @include flex-itms_center
                     justify-content: center
+
+.foiwing
+        width: 100%
+        display: flex
+        justify-content: space-around
+        margin-top: 20px
+        border-top: 0.8px solid rgb(65, 65, 65) 
+        padding-top: 10px
+        padding-bottom: 5px
+        display: none 
+        div
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            .c
+                font-weight: 100
+                font-size: 10px
+                color: $text-footer-color
+
+
+            span
+                font-size: 12px
+
+@media (max-width:$breakpoint-tablet)
+    .header
+        width:$full-height
+        height: 30%
+        .section-bar-stories
+            width: 100%
+            
+@media (max-width: $breakpoint-mobile)
+    .header
+        width: 100%
+        height: fit-content
+        position: relative
+        padding-bottom: 8px
+        .section-content-profile
+            justify-content: start
+            align-items: center
+            gap: 20px
+            width: 100%
+            .contenar-divs-info
+
+                .colon1
+                    display: grid
+                    grid-template-columns: repeat(2 , auto)
+                    grid-template-rows: repeat(2,auto)
+                    gap: 10px
+
+                    span
+                        grid-column: span 3
+
+                    a
+                        margin-left: -5px
+                        font-size: 10px
+
+                    div
+                        display: none
+
+                .colon2
+                    display: none
+
+                .colon3
+                    position: absolute
+                    top: 135px
+                    left: 15px
+ 
+            img
+                width: 70px
+                height: 70px
+                margin-left: 5px
+
+        .section-bar-stories 
+            margin-top: 40px 
+            margin-left:19px
+            width: 100%
+
+            .stori
+                .cercle1
+                    .cercle2
+                        width: 45px
+                        height: 45px
+    .foiwing
+        display: flex
+        

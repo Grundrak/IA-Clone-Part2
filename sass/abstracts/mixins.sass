@@ -1,3 +1,14 @@
 @mixin flex-itms_center 
       display: flex                  
       align-items: center
+
+@mixin before-decorator($bg-color, $width, $height, $top, $left, $transform: null)
+  content: ""
+  position: absolute
+  background-color: $bg-color
+  top: $top
+  left: $left
+  width: $width
+  height: $height
+  @if $transform != null
+    transform: $transform

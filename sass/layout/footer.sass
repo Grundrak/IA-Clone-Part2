@@ -38,3 +38,27 @@ a
     color: $text-footer-color
     font-size: $font-size-footer
     border: $border-langues
+@media (max-width:768px)
+    footer
+        height: 20%
+        justify-content: center
+        width: $full-height
+        padding-bottom: 0px
+        height: 20%
+        div
+            width: 90%
+            display: flex
+            margin-bottom:10px
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap 
+
+            a
+              font-size: 8px
+
+            #Dropdown
+                font-size: 8px
+
+@media (max-width: $breakpoint-mobile)
+    .footer
+      display: none
