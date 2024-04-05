@@ -47,10 +47,9 @@ body
   background: $background-color
   font-family: $base-font-family
   color: white
-
-.min_logo
- height: 0px
-
+.min-logo
+   display: none
+ 
 .sidebar
   a
     display: inline-block
@@ -144,10 +143,11 @@ body
         width: 100%
         span .Title
           display: none
-  .min-logo svg
+  .min-logo
+    display: block
     height: 26px
     width: 26px
-    padding: 20px 10px
+    padding: 25px 10px
 
 
 
@@ -159,6 +159,7 @@ body
     bottom: 0
     left: 0
     top: auto
+    z-index: 1
     nav
       flex-direction: row
       justify-content: space-between

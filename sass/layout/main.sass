@@ -29,7 +29,7 @@ section
     position: relative
     min-height: 20px
     ::before
-        @include before-decorator(rgba(255, 255, 255, 0.027), 70%, 1px, 0, 50%, translateX(-50%))
+        @include before-decorator(rgba(255, 255, 255, 0.027), 80%, 1px, 0, 50%, translateX(-50%))
 
 .ic2 , .ic3
     color: #ffffff16
@@ -39,8 +39,6 @@ section
     align-items: center
     gap: $high-spacing
     padding: $base-padding
-    ::before
-        @include before-decorator(rgba(255, 255, 255, 0.197), 10%, 1px, 0, 320px)
     svg
         cursor: pointer
         color: $primary-color
@@ -105,16 +103,14 @@ section
     width:100%
     gap: 120px
     padding: 10px 0  
-  svg
-    width: 26px
-    height: 26px
+    .ic1 svg
+        color: $color-post-phone
   button
     display: none
   .photo
     display: grid
     grid-template-columns: repeat(3, 33.33%)
-    gap: 2px
-    
+    gap: 2px 
     .posts img
       width: 100%
       height: 200px
